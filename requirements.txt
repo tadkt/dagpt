@@ -5,7 +5,7 @@ langchain-experimental
 streamlit
 pandas
 seaborn
-matplotlib.pyplot
+matplotlib
 pygwalker
 jupyterlab
 tiktoken
