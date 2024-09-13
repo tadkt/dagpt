@@ -1,20 +1,26 @@
+<<<<<<< HEAD
 from langchain_openai import ChatOpenAI 
+=======
+from langchain_openai import ChatOpenAI
+
+>>>>>>> 8219d3f (commit 13/9)
 
 def load_llm(model_name):
     """Load Large Language Model.
 
     Args:
-        model_name (_type_): _description_
+        model_name (str): The name of the model to load.
 
     Raises:
-        ValueError: _description_
+        ValueError: If the model_name is not recognized.
 
     Returns:
-        _type_: _description_
+        ChatOpenAI: An instance of ChatOpenAI configured for the specified model.
     """
+
     if model_name == "gpt-3.5-turbo":
         return ChatOpenAI(
-            model = model_name,
+            model=model_name,
             temperature=0.0,
             max_tokens=1000,
         )
@@ -25,7 +31,17 @@ def load_llm(model_name):
             max_tokens=1000,
         )
     elif model_name == "gemini-pro":
+<<<<<<< HEAD
         # Import Gemini and Return Gemini model
         pass
     else:
         raise ValueError("Unknown Model.\Please choose from ['gpt-3.5-turbo', 'gpt-4', ...]")
+=======
+        # Import Gemini and Return Gemini mode
+        pass
+    else:
+        raise ValueError(
+            "Unknown model.\
+                Please choose from ['gpt-3.5-turbo','gpt-4', ...]"
+        )
+>>>>>>> 8219d3f (commit 13/9)
